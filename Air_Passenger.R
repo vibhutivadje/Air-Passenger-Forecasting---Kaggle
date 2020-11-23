@@ -18,6 +18,8 @@ Summary(AirPassenger.data)
 ##Check for missing values
 sum(is.na(AirPassenger.data))
 
+## Check the cycle of this time series data
+frequency(Air_Passenger.data)
 # 1. Plot the data and visualize time series components.
 
 ## 1-a Create time series data set in R using the ts() function.
