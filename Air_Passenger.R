@@ -28,9 +28,11 @@ class(AirPassenger.ts)
 ##Check for missing values
 sum(is.na(AirPassenger.data))
 
-
+##test frequency
 frequency(AirPassenger.ts)
 
+## test cycle 
+cycle(AirPassenger.ts)
 
 ## 1-b Apply the plot() function to create a data plot with the historical data, provide it in 
 ##your report, and explain what time series components can be visualized in this plot.
