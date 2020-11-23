@@ -34,12 +34,18 @@ frequency(AirPassenger.ts)
 ## test cycle 
 cycle(AirPassenger.ts)
 
+## dataset summary
+summary(AirPassenger.ts)
+
 ## 1-b Apply the plot() function to create a data plot with the historical data, provide it in 
 ##your report, and explain what time series components can be visualized in this plot.
 
 plot(AirPassenger.ts, 
      xlab = "Time", ylab = "AirPassenger (in $M)", 
      ylim = c(0, 700),main = "AirPassenger", col = "blue")
+
+boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)", ylab="Months", col=rgb(0.1,0.9,0.3,0.4), 
+        main="Monthly Air Passengers Boxplot from 1950 to 1960", horizontal=TRUE, notch=FALSE)
 
 autocor <- Acf(AirPassenger.ts, lag.max = 12, main = "Autocorrelation for AirPassenger")
 AirPassenger.stl <- stl(AirPassenger.ts, s.window = "periodic")
