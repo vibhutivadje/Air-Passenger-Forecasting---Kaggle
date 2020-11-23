@@ -45,7 +45,18 @@ plot(AirPassenger.ts,
      ylim = c(0, 700),main = "AirPassenger", col = "blue")
 
 boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)", ylab="Months", col=rgb(0.1,0.9,0.3,0.4), 
-        main="Monthly Air Passengers Boxplot from 1950 to 1960", horizontal=TRUE, notch=FALSE)
+        main="Monthly Air Passengers Boxplot from 1950 to 1960", notch=FALSE)
+
+##Observations:
+# The passenger numbers increase over time with each year which may be indicative of an increasing linear trend. 
+# Possible due to an increase in demand for flights and commercialisation of airlines in that time period.
+
+## The boxplot shows more passengers travelling in months 6(july) to 9(aug) with higher averages and higher variances than the other months, 
+## indicating seasonality within an apparent cycle of 12 months. The rationale for this could be more people taking holidays and fly over the summer months in the US.
+
+## The dataset appears to be a multiplicative time series, since passenger numbers increase, with a pattern of seasonality.
+## There do not appear to be any outliers and there are no missing values.
+
 
 autocor <- Acf(AirPassenger.ts, lag.max = 12, main = "Autocorrelation for AirPassenger")
 AirPassenger.stl <- stl(AirPassenger.ts, s.window = "periodic")
