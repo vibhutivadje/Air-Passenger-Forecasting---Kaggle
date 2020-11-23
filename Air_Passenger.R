@@ -8,10 +8,10 @@ library(zoo)
 
 ## CREATE DATA FRAME. 
 #Grocery.data <- read.csv("673_case1.csv")
-Air_Passenger.data <- read.csv(file.choose(), header = TRUE)
+AirPassenger.data <- read.csv(file.choose(), header = TRUE)
 # See the first 6 records of the file.
-head(Air_Passenger.data)
-Summary(Air_Passenger.data)
+head(AirPassenger.data)
+Summary(AirPassenger.data)
 
 
 # 1. Plot the data and visualize time series components.
