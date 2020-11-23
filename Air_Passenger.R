@@ -22,6 +22,8 @@ sum(is.na(AirPassenger.data))
 frequency(AirPassenger.data)
 
 summary(AirPassenger.data)
+
+boxplot(AirPassenger.data~cycle(AirPassenger.data))
 # 1. Plot the data and visualize time series components.
 
 ## 1-a Create time series data set in R using the ts() function.
