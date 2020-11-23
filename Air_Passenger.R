@@ -13,6 +13,10 @@ AirPassenger.data <- read.csv(file.choose(), header = TRUE)
 head(AirPassenger.data)
 Summary(AirPassenger.data)
 
+## Pre-Process Data:
+
+##Check for missing values
+sum(is.na(AirPassenger.data))
 
 # 1. Plot the data and visualize time series components.
 
