@@ -11,7 +11,7 @@ library(zoo)
 AirPassenger.data <- read.csv(file.choose(), header = TRUE)
 # See the first 6 records of the file.
 head(AirPassenger.data)
-Summary(AirPassenger.data)
+
 
 ## Pre-Process Data:
 
@@ -19,7 +19,9 @@ Summary(AirPassenger.data)
 sum(is.na(AirPassenger.data))
 
 ## Check the cycle of this time series data
-frequency(Air_Passenger.data)
+frequency(AirPassenger.data)
+
+summary(AirPassenger.data)
 # 1. Plot the data and visualize time series components.
 
 ## 1-a Create time series data set in R using the ts() function.
