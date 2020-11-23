@@ -20,18 +20,17 @@ class(AirPassenger.data)
 AirPassenger.ts <- ts(AirPassenger.data$Passengers, 
                       start = c(1949, 1), end = c(1960, 12), freq = 12)
 
-
+class(AirPassenger.ts)
 #boxplot(AirPassenger.data~cycle(AirPassenger.data))
 # 1. Plot the data and visualize time series components.
 
+## test for missing values
+##Check for missing values
+sum(is.na(AirPassenger.data))
 
-AirPassenger.ts <- ts(AirPassenger.data$Passengers, 
-                      start = c(1949, 1), end = c(1960, 12), freq = 12)
 
 frequency(AirPassenger.ts)
 
-##Check for missing values
-sum(is.na(AirPassenger.data))
 
 ## 1-b Apply the plot() function to create a data plot with the historical data, provide it in 
 ##your report, and explain what time series components can be visualized in this plot.
