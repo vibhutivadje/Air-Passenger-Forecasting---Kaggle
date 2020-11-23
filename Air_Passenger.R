@@ -14,17 +14,16 @@ AirPassenger.data <- read.csv(file.choose(), header = TRUE)
 head(AirPassenger.data)
 
 class(AirPassenger.data)
-## Pre-Process Data:
 
+## Exploratory Data Analysis
+## 1-a Create time series data set in R using the ts() function.
+AirPassenger.ts <- ts(AirPassenger.data$Passengers, 
+                      start = c(1949, 1), end = c(1960, 12), freq = 12)
 
-## Check the cycle of this time series data
-
-summary(AirPassenger.data)
 
 #boxplot(AirPassenger.data~cycle(AirPassenger.data))
 # 1. Plot the data and visualize time series components.
 
-## 1-a Create time series data set in R using the ts() function.
 
 AirPassenger.ts <- ts(AirPassenger.data$Passengers, 
                       start = c(1949, 1), end = c(1960, 12), freq = 12)
