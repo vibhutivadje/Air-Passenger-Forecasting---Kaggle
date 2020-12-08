@@ -61,3 +61,6 @@ boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)",
 
 sum(is.na(AirPassenger.data))
 
+## 4-b: Test frequency
+frequency(AirPassenger.ts)
+
