@@ -56,3 +56,4 @@ autoplot(AirPassenger.stl, main = "Airpassenger Time Series Components")
 boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)", ylab="Months", col=rgb(0.1,0.9,0.3,0.4), 
         main="Monthly Air Passengers Boxplot from 1950 to 1960", notch=FALSE)
 
+## 4. DATA PREPROCESSING
