@@ -59,4 +59,5 @@ boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)",
 ## 4. DATA PREPROCESSING
 ## 4-a: Check for missing values
 
+sum(is.na(AirPassenger.data))
 
