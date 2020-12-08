@@ -57,3 +57,6 @@ boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)",
         main="Monthly Air Passengers Boxplot from 1950 to 1960", notch=FALSE)
 
 ## 4. DATA PREPROCESSING
+## 4-a: Check for missing values
+
+
