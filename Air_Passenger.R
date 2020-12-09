@@ -68,5 +68,7 @@ frequency(AirPassenger.ts)
 cycle(AirPassenger.ts)
 
 
+## 4-d: Dataset summary
+summary(AirPassenger.ts)
 
 
