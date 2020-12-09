@@ -71,4 +71,6 @@ cycle(AirPassenger.ts)
 ## 4-d: Dataset summary
 summary(AirPassenger.ts)
 
+## 5. DATA PARTITION
+
 
