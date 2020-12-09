@@ -65,4 +65,8 @@ sum(is.na(AirPassenger.data))
 frequency(AirPassenger.ts)
 
 ## 4-c: Test cycle 
+cycle(AirPassenger.ts)
+
+
+
 
