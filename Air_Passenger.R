@@ -75,5 +75,6 @@ summary(AirPassenger.ts)
 
 ## 5-a: Develop data partition with the validation partition of 25 periods and the rest for the training partition.
 
+nValid <- 25
 
 
