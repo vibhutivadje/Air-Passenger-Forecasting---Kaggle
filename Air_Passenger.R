@@ -78,5 +78,9 @@ summary(AirPassenger.ts)
 nValid <- 25
 nTrain <- length(AirPassenger.ts) - nValid
 train.ts <- window(AirPassenger.ts, start = c(1949, 1), end = c(1949, nTrain))
+valid.ts <- window(AirPassenger.ts, start = c(1949, nTrain + 1), 
+                   end = c(1949, nTrain + nValid))
+
+
 
 
