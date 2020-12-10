@@ -81,6 +81,11 @@ train.ts <- window(AirPassenger.ts, start = c(1949, 1), end = c(1949, nTrain))
 valid.ts <- window(AirPassenger.ts, start = c(1949, nTrain + 1), 
                    end = c(1949, nTrain + nValid))
 
-
+# Plot the time series data and visualize partitions. 
+plot(train.ts, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xaxt = "n", xlim = c(1949, 1962.25), main = "Air Passenger data partition", lwd = 2) 
+axis(1, at = seq(1949, 1962.25, 1), labels = format(seq(1949, 1962.25, 1)))
+lines(valid.ts, col = "black", lty = 1, lwd = 2)
 
 
