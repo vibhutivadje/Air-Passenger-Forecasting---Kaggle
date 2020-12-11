@@ -95,4 +95,10 @@ lines(c(1960.95, 1960.9), c(0, 720))
 text(1954, 720, "Training", cex = 0.75)
 text(1959.9, 720, "Validation", cex = 0.75)
 text(1961.8, 720, "Future", cex = 0.75)
+arrows(1958.7, 670, 1948.7, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
 
