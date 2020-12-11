@@ -90,4 +90,6 @@ lines(valid.ts, col = "black", lty = 1, lwd = 2)
 
 # Plot on chart vertical lines and horizontal arrows describing
 # training, validation, and future prediction intervals.
+lines(c(1958.9, 1958.9), c(0, 720))
+lines(c(1960.95, 1960.9), c(0, 720))
 
