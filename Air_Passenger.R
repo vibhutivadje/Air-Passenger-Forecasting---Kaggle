@@ -92,4 +92,7 @@ lines(valid.ts, col = "black", lty = 1, lwd = 2)
 # training, validation, and future prediction intervals.
 lines(c(1958.9, 1958.9), c(0, 720))
 lines(c(1960.95, 1960.9), c(0, 720))
+text(1954, 720, "Training", cex = 0.75)
+text(1959.9, 720, "Validation", cex = 0.75)
+text(1961.8, 720, "Future", cex = 0.75)
 
