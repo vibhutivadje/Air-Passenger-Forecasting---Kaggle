@@ -69,3 +69,14 @@ cycle(AirPassenger.ts)
 ## 4-d: Dataset summary
 summary(AirPassenger.ts)
 
+## 5. DATA PARTITION
+
+## 5-a: Develop data partition with the validation partition of 25 periods and the rest for the training partition.
+
+nValid <- 25
+nTrain <- length(AirPassenger.ts) - nValid
+train.ts <- window(AirPassenger.ts, start = c(1949, 1), end = c(1949, nTrain))
+valid.ts <- window(AirPassenger.ts, start = c(1949, nTrain + 1), 
+                   end = c(1949, nTrain + nValid))
+
+
