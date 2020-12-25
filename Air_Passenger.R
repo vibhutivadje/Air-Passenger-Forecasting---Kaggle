@@ -35,3 +35,17 @@ diff.AirPassenger
 Acf(diff.AirPassenger, lag.max = 12, 
     main = "Autocorrelation for Differenced Air Passenger Data")
 
+## 3. EXPLORE AND VISUALIZE SERIES
+
+## 3-a: Apply the plot() function to create a data plot with the historical data
+plot(AirPassenger.ts, 
+     xlab = "Time", ylab = "AirPassenger (in $M)", 
+     ylim = c(0, 700),main = "AirPassenger", col = "blue")
+
+## 3-b: Auto correlation on time series data
+Acf(AirPassenger.ts, lag.max = 12, main = "Autocorrelation for AirPassenger")
+
+## 3-c: Use stl() function to plot times series components of the original data.
+AirPassenger.stl <- stl(AirPassenger.ts, s.window = "periodic")
+
+autoplot(AirPassenger.stl, main = "Airpassenger Time Series Components")
