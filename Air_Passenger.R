@@ -49,3 +49,23 @@ Acf(AirPassenger.ts, lag.max = 12, main = "Autocorrelation for AirPassenger")
 AirPassenger.stl <- stl(AirPassenger.ts, s.window = "periodic")
 
 autoplot(AirPassenger.stl, main = "Airpassenger Time Series Components")
+
+## 3-d: Box plot
+boxplot(AirPassenger.ts~cycle(AirPassenger.ts), xlab="Passenger Numbers ('000)", ylab="Months", col=rgb(0.1,0.9,0.3,0.4), 
+        main="Monthly Air Passengers Boxplot from 1950 to 1960", notch=FALSE)
+
+
+## 4. DATA PREPROCESSING
+
+## 4-a: Check for missing values
+sum(is.na(AirPassenger.data))
+
+## 4-b: Test frequency
+frequency(AirPassenger.ts)
+
+## 4-c: Test cycle 
+cycle(AirPassenger.ts)
+
+## 4-d: Dataset summary
+summary(AirPassenger.ts)
+
