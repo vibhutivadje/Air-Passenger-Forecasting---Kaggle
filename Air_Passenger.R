@@ -79,4 +79,24 @@ train.ts <- window(AirPassenger.ts, start = c(1949, 1), end = c(1949, nTrain))
 valid.ts <- window(AirPassenger.ts, start = c(1949, nTrain + 1), 
                    end = c(1949, nTrain + nValid))
 
+# Plot the time series data and visualize partitions. 
+plot(train.ts, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xaxt = "n", xlim = c(1949, 1962.25), main = "Air Passenger data partition", lwd = 2) 
+axis(1, at = seq(1949, 1962.25, 1), labels = format(seq(1949, 1962.25, 1)))
+lines(valid.ts, col = "black", lty = 1, lwd = 2)
+
+# Plot on chart vertical lines and horizontal arrows describing
+# training, validation, and future prediction intervals.
+lines(c(1958.9, 1958.9), c(0, 720))
+lines(c(1960.95, 1960.9), c(0, 720))
+text(1954, 720, "Training", cex = 0.75)
+text(1959.9, 720, "Validation", cex = 0.75)
+text(1961.8, 720, "Future", cex = 0.75)
+arrows(1958.7, 670, 1948.7, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
 
