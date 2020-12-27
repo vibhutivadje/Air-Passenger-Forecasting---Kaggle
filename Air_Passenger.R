@@ -134,3 +134,9 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 #arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 #      lwd = 1, angle = 30)
 
+## ii. Regression model with quadratic trend and seasonality 
+
+train.trend.season <- tslm(train.ts ~ trend + I(trend^2) + season)
+summary(train.trend.season)
+train.trend.season.pred <- forecast(train.trend.season, h = nValid, level = 0)
+
