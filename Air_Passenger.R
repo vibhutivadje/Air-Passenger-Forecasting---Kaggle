@@ -140,3 +140,12 @@ train.trend.season <- tslm(train.ts ~ trend + I(trend^2) + season)
 summary(train.trend.season)
 train.trend.season.pred <- forecast(train.trend.season, h = nValid, level = 0)
 
+# Plot predictions for quadratic trend and seasonality forecast.
+plot(train.trend.season.pred$mean, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xlim = c(1949, 1962.25), main = "Quadratic Trend and Seasonality Forecast", 
+     col = "blue", lwd =2) 
+lines(train.trend.season.pred$fitted, col = "blue", lwd = 2)
+lines(train.ts, col = "black", lty = 1)
+lines(valid.ts, col = "black", lty = 1)
+
