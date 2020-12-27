@@ -194,3 +194,9 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 #arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 #       lwd = 1, angle = 30)
 
+## 7. Apply the accuracy() function to compare performance measure of the 3 forecasts developed above. 
+
+round(accuracy(train.lin.season.pred, valid.ts), 3)
+round(accuracy(train.trend.season.pred, valid.ts), 3)
+round(accuracy(hw.ZZZ.pred, valid.ts), 3)
+
