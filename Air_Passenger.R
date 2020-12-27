@@ -163,3 +163,20 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 #arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 #       lwd = 1, angle = 30)
 
+## 6-b HOLT-WINTER'S MODEL
+
+hw.ZZZ <- ets(train.ts, model = "ZZZ")
+hw.ZZZ 
+
+hw.ZZZ.pred <- forecast(hw.ZZZ, h = nValid, level = 0)
+hw.ZZZ.pred
+
+# Plot predictions for HOLT-WINTER'S model forecast
+plot(hw.ZZZ.pred$mean, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xlim = c(1949, 1962.25), main = "Holt-winter's model Forecast", 
+     col = "blue", lwd =2) 
+lines(hw.ZZZ.pred$fitted, col = "blue", lwd = 2)
+lines(train.ts, col = "black", lty = 1)
+lines(valid.ts, col = "black", lty = 1)
+
