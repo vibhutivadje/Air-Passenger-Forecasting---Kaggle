@@ -228,3 +228,7 @@ res.ar12$fitted
 Acf(res.ar12$residuals, lag.max = 12, 
     main = "AR(12) Autocorrelation for Quadratic Training model Residuals of Residuals")
 
+## 8-d Forecasting residuals using AR(12)
+res.ar12.pred <- forecast(res.ar12, h = nValid, level = 0)
+res.ar12.pred
+
