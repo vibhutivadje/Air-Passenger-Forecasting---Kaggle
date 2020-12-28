@@ -232,3 +232,8 @@ Acf(res.ar12$residuals, lag.max = 12,
 res.ar12.pred <- forecast(res.ar12, h = nValid, level = 0)
 res.ar12.pred
 
+## 8-e Combined forecasting: lm predictions and AR(12) predictions
+#For training period
+two.level.pred.train <- train.trend.season.pred$fitted + res.ar12.pred$fitted
+two.level.pred.train
+
