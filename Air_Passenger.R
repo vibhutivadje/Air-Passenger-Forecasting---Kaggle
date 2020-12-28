@@ -237,3 +237,7 @@ res.ar12.pred
 two.level.pred.train <- train.trend.season.pred$fitted + res.ar12.pred$fitted
 two.level.pred.train
 
+#For validation period
+two.level.pred <- train.trend.season.pred$mean + res.ar12.pred$mean
+two.level.pred
+
