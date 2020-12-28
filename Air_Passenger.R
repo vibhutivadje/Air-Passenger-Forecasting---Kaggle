@@ -241,3 +241,10 @@ two.level.pred.train
 two.level.pred <- train.trend.season.pred$mean + res.ar12.pred$mean
 two.level.pred
 
+## 8-f Create table
+table.df <- data.frame(valid.ts,train.trend.season.pred$mean, 
+                       res.ar12.pred$mean, two.level.pred)
+names(table.df) <- c("Validation data", "Reg.Forecast", 
+                     "AR(12)Forecast", "Combined.Forecast")
+table.df
+
