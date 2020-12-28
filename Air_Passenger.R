@@ -200,3 +200,10 @@ round(accuracy(train.lin.season.pred, valid.ts), 3)
 round(accuracy(train.trend.season.pred, valid.ts), 3)
 round(accuracy(hw.ZZZ.pred, valid.ts), 3)
 
+## 8. CALCULATE THE RESIDUAL OF BEST MODEL TO IMPLEMENT 2-LEVEL FORECASTING 
+
+## 8-a: Level 1: For Quad trend+Seasonality
+train.trend.season.pred$residuals
+Acf(train.trend.season.pred$residuals, lag.max = 12, 
+    main = "Autocorrelation for Training Residuals for Quadratic regression model")
+
