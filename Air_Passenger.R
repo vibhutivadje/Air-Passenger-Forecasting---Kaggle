@@ -223,3 +223,8 @@ res.ar3$fitted
 res.ar12 <- Arima(train.trend.season.pred$residuals, order = c(12,0,0))
 summary(res.ar12)
 res.ar12$fitted
+
+## 8-c Autocorrelation for Residual of residuals
+Acf(res.ar12$residuals, lag.max = 12, 
+    main = "AR(12) Autocorrelation for Quadratic Training model Residuals of Residuals")
+
