@@ -207,3 +207,8 @@ train.trend.season.pred$residuals
 Acf(train.trend.season.pred$residuals, lag.max = 12, 
     main = "Autocorrelation for Training Residuals for Quadratic regression model")
 
+## 8-b: Level 2: Apply AR(1),AR(2),AR(3) and AR(12) on Quad trend+seasonality residual
+res.ar1 <- Arima(train.trend.season.pred$residuals, order = c(1,0,0))
+summary(res.ar1)
+res.ar1$fitted
+
