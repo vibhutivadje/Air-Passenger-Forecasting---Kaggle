@@ -212,3 +212,6 @@ res.ar1 <- Arima(train.trend.season.pred$residuals, order = c(1,0,0))
 summary(res.ar1)
 res.ar1$fitted
 
+res.ar2 <- Arima(train.trend.season.pred$residuals, order = c(2,0,0))
+summary(res.ar2)
+res.ar2$fitted
