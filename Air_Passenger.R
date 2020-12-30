@@ -288,4 +288,6 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 
 round(accuracy(train.lin.season.pred, valid.ts), 3)
 round(accuracy(train.trend.season.pred, valid.ts), 3)
+round(accuracy(hw.ZZZ.pred, valid.ts), 3)
+round(accuracy(two.level.pred.train, train.ts), 3)
 
