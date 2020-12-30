@@ -286,3 +286,6 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 ## (5) Two-level modeling (Quad trend with seas + AR(12)) - validation
 ## (6) Auto-ARIMA
 
+round(accuracy(train.lin.season.pred, valid.ts), 3)
+round(accuracy(train.trend.season.pred, valid.ts), 3)
+
