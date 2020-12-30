@@ -248,3 +248,7 @@ names(table.df) <- c("Validation data", "Reg.Forecast",
                      "AR(12)Forecast", "Combined.Forecast")
 table.df
 
+## 9. APPLY AUTO-ARIMA AND FORECAST() FUNCTION TO MAKE PREDICTIONS
+train.auto.arima <- auto.arima(train.ts)
+summary(train.auto.arima)
+
