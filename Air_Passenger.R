@@ -280,4 +280,6 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 
 ## 10. CHECK ACCURACY FOR TRAINING DATASET MODEL
 ## (1) Linear trend with seasonality
+## (2) Quadratic trend with seasonality
+## (3) Holt's winter
 
