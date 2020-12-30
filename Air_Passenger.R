@@ -252,3 +252,6 @@ table.df
 train.auto.arima <- auto.arima(train.ts)
 summary(train.auto.arima)
 
+train.auto.arima.pred <- forecast(train.auto.arima, h = nValid, level = 0)
+train.auto.arima.pred
+
