@@ -290,4 +290,6 @@ round(accuracy(train.lin.season.pred, valid.ts), 3)
 round(accuracy(train.trend.season.pred, valid.ts), 3)
 round(accuracy(hw.ZZZ.pred, valid.ts), 3)
 round(accuracy(two.level.pred.train, train.ts), 3)
+round(accuracy(two.level.pred, valid.ts), 3)
+round(accuracy(train.auto.arima.pred, valid.ts), 3)
 
