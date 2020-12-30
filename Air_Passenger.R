@@ -255,3 +255,16 @@ summary(train.auto.arima)
 train.auto.arima.pred <- forecast(train.auto.arima, h = nValid, level = 0)
 train.auto.arima.pred
 
+# Plot predictions for Auto ARIMA model forecast
+plot(train.auto.arima.pred$mean, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xlim = c(1949, 1962.25), main = "12 Year Auto ARIMA Model (Train/Val)", 
+     col = "blue", lwd =2) 
+lines(train.auto.arima.pred$fitted, col = "blue", lwd = 2)
+lines(train.ts, col = "black", lty = 1)
+lines(valid.ts, col = "black", lty = 1)
+legend(1949,650, legend = c("AirPassenger Time Series", 
+                            "Auto ARIMA Forecast for Validation Period"), 
+       col = c("black", "blue" , "blue"), 
+       lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n", cex=0.8)
+
