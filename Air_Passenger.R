@@ -278,3 +278,6 @@ arrows(1958.7, 670, 1948.7, 670, code = 3, length = 0.1,
 arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
        lwd = 1, angle = 30)
 
+## 10. CHECK ACCURACY FOR TRAINING DATASET MODEL
+## (1) Linear trend with seasonality
+
