@@ -282,4 +282,6 @@ arrows(1959.1, 670, 1960.8, 670, code = 3, length = 0.1,
 ## (1) Linear trend with seasonality
 ## (2) Quadratic trend with seasonality
 ## (3) Holt's winter
+## (4) Two-level modeling (Quad trend with seas+ AR(12)) - training
+## (5) Two-level modeling (Quad trend with seas + AR(12)) - validation
 
