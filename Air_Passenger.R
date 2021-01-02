@@ -300,4 +300,6 @@ auto.arima <- auto.arima(AirPassenger.ts)
 summary(auto.arima)
 
 # Apply forecast() function to make predictions for ts with 
-
+# auto ARIMA model for the future 12 periods. 
+auto.arima.pred <- forecast(auto.arima, h = 12, level = 0)
+auto.arima.pred
