@@ -294,4 +294,8 @@ round(accuracy(two.level.pred, valid.ts), 3)
 round(accuracy(train.auto.arima.pred, valid.ts), 3)
 
 ## 11. FIT AUTO ARIMA MODELS FOR ENTIRE DATA SET. 
+# Use auto.arima() function to fit ARIMA model for entire data set.
+# use summary() to show auto ARIMA model and its parameters for entire data set.
+auto.arima <- auto.arima(AirPassenger.ts)
+summary(auto.arima)
 
