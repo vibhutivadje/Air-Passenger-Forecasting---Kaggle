@@ -293,3 +293,5 @@ round(accuracy(two.level.pred.train, train.ts), 3)
 round(accuracy(two.level.pred, valid.ts), 3)
 round(accuracy(train.auto.arima.pred, valid.ts), 3)
 
+## 11. FIT AUTO ARIMA MODELS FOR ENTIRE DATA SET. 
+
