@@ -303,3 +303,7 @@ summary(auto.arima)
 # auto ARIMA model for the future 12 periods. 
 auto.arima.pred <- forecast(auto.arima, h = 12, level = 0)
 auto.arima.pred
+
+
+# Plot predictions for Auto ARIMA model forecast for entire dataset
+
