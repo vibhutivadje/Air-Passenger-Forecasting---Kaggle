@@ -319,3 +319,7 @@ legend(1949,650, legend = c("AirPassenger Time Series",
        col = c("black", "blue" , "blue"), 
        lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n", cex=0.8)
 
+# Plot on chart vertical lines and horizontal arrows describing
+# training, validation, and future prediction intervals.
+#lines(c(1958.9, 1958.9), c(0, 720))
+
