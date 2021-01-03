@@ -324,4 +324,6 @@ legend(1949,650, legend = c("AirPassenger Time Series",
 #lines(c(1958.9, 1958.9), c(0, 720))
 lines(c(1960.95, 1960.9), c(0, 720))
 text(1955, 720, "Training", cex = 0.75)
+#text(1959.9, 720, "Validation", cex = 0.75)
+text(1961.8, 720, "Future", cex = 0.75)
 
