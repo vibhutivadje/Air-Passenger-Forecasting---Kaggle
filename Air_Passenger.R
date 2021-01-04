@@ -333,3 +333,7 @@ arrows(1960.7, 670, 1948.7, 670, code = 3, length = 0.1,
 arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
        lwd = 1, angle = 30)
 
+## 12. TWO-LEVEL FORECASTING ON ENTIRE DATASET
+# Level 1: Use tslm() function to create quadratic trend and seasonality model.
+trend.season <- tslm(AirPassenger.ts ~ trend + I(trend^2) + season)
+
