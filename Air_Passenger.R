@@ -337,3 +337,6 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 # Level 1: Use tslm() function to create quadratic trend and seasonality model.
 trend.season <- tslm(AirPassenger.ts ~ trend + I(trend^2) + season)
 
+# See summary of linear trend equation and associated parameters.
+summary(trend.season)
+
