@@ -356,3 +356,7 @@ residual.ar12 <- Arima(trend.season$residuals, order = c(12,0,0))
 # Use summary() to identify parameters of AR(12) model.
 summary(residual.ar12)
 
+# Use forecast() function to make prediction of residuals into the future 12 months.
+residual.ar12.pred <- forecast(residual.ar12, h = 12, level = 0)
+residual.ar12.pred
+
