@@ -353,3 +353,6 @@ Acf(trend.season.pred$residuals, lag.max = 12,
 # The ARIMA model of order = c(12,0,0) gives an AR(12) model.
 residual.ar12 <- Arima(trend.season$residuals, order = c(12,0,0))
 
+# Use summary() to identify parameters of AR(12) model.
+summary(residual.ar12)
+
