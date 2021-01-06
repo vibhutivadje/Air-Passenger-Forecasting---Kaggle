@@ -340,3 +340,8 @@ trend.season <- tslm(AirPassenger.ts ~ trend + I(trend^2) + season)
 # See summary of linear trend equation and associated parameters.
 summary(trend.season)
 
+# Apply forecast() function to make predictions with quadratic trend and seasonal 
+# model into the future 12 months.  
+trend.season.pred <- forecast(trend.season, h = 12, level = 0)
+trend.season.pred
+
