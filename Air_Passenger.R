@@ -345,3 +345,7 @@ summary(trend.season)
 trend.season.pred <- forecast(trend.season, h = 12, level = 0)
 trend.season.pred
 
+# plot autocorrelation for regression residuals (up to maximum of 12).
+Acf(trend.season.pred$residuals, lag.max = 12, 
+    main = "Autocorrelation for Airpassenger Regression Residuals for Entire Data Set")
+
