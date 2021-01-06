@@ -349,3 +349,7 @@ trend.season.pred
 Acf(trend.season.pred$residuals, lag.max = 12, 
     main = "Autocorrelation for Airpassenger Regression Residuals for Entire Data Set")
 
+# Level 2: Use Arima() function to fit AR(12) model for regression residuals.
+# The ARIMA model of order = c(12,0,0) gives an AR(12) model.
+residual.ar12 <- Arima(trend.season$residuals, order = c(12,0,0))
+
