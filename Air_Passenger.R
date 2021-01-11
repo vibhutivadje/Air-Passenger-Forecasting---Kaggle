@@ -370,3 +370,10 @@ Acf(residual.ar12$residuals, lag.max = 12,
 trend.season.ar12.pred <- trend.season.pred$mean + residual.ar12.pred$mean
 trend.season.ar12.pred
 
+# plot historical data, predictions for historical data, and forecast for 12 future periods.
+plot(AirPassenger.ts, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xaxt = "n", xlim = c(1949, 1962.25), lwd = 2,
+     main = "Two-Level Forecast: Regression with Quadratic Trend and Seasonlity + AR(12)
+     for Residuals for Entire Data Set") 
+
