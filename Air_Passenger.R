@@ -360,3 +360,10 @@ summary(residual.ar12)
 residual.ar12.pred <- forecast(residual.ar12, h = 12, level = 0)
 residual.ar12.pred
 
+# Use Acf() function to identify autocorrelation for the residual of residuals 
+# and plot autocorrelation for different lags (up to maximum of 12).
+Acf(residual.ar12$residuals, lag.max = 12, 
+    main = "Autocorrelation for Airpassenger Residuals of Residuals for Entire Data Set")
+
+# Identify forecast for the future 12 periods as sum of quadratic trend and seasonal model
+
