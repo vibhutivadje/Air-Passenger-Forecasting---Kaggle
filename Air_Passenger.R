@@ -367,4 +367,5 @@ Acf(residual.ar12$residuals, lag.max = 12,
 
 # Identify forecast for the future 12 periods as sum of quadratic trend and seasonal model
 # and AR(12) model for residuals.
+trend.season.ar12.pred <- trend.season.pred$mean + residual.ar12.pred$mean
 
