@@ -366,4 +366,5 @@ Acf(residual.ar12$residuals, lag.max = 12,
     main = "Autocorrelation for Airpassenger Residuals of Residuals for Entire Data Set")
 
 # Identify forecast for the future 12 periods as sum of quadratic trend and seasonal model
+# and AR(12) model for residuals.
 
