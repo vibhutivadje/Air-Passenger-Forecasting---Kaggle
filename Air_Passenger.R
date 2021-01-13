@@ -384,3 +384,5 @@ legend(1950,650, legend = c("Air Passengers Series (Training Data)",
        col = c("black", "blue" , "blue"), 
        lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n")
 
+# plot on the chart vertical lines and horizontal arrows
+
