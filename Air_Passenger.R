@@ -376,4 +376,11 @@ plot(AirPassenger.ts,
      xaxt = "n", xlim = c(1949, 1962.25), lwd = 2,
      main = "Two-Level Forecast: Regression with Quadratic Trend and Seasonlity + AR(12)
      for Residuals for Entire Data Set") 
+axis(1, at = seq(1949, 1962.25, 1), labels = format(seq(1949, 1962.25, 1)))
+lines(trend.season$fitted + residual.ar12$fitted, col = "blue", lwd = 2)
+lines(trend.season.ar12.pred, col = "blue", lty = 5, lwd = 2)
+legend(1950,650, legend = c("Air Passengers Series (Training Data)", 
+                            "Two-Level Forecast for Training Data", "Two-Level Forecast for 12 Future Periods"), 
+       col = c("black", "blue" , "blue"), 
+       lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n")
 
