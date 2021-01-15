@@ -386,4 +386,4 @@ legend(1950,650, legend = c("Air Passengers Series (Training Data)",
 
 # plot on the chart vertical lines and horizontal arrows
 # describing training and future prediction intervals.
-
+lines(c(1961, 1961), c(0, 720))
