@@ -391,6 +391,8 @@ text(1955, 720, "Training")
 text(1961.8, 720, "Future")
 arrows(1948.7, 670, 1960.8, 670, code = 3, length = 0.1,
        lwd = 1, angle = 30)
+arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
 
 
 
