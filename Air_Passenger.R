@@ -388,3 +388,9 @@ legend(1950,650, legend = c("Air Passengers Series (Training Data)",
 # describing training and future prediction intervals.
 lines(c(1961, 1961), c(0, 720))
 text(1955, 720, "Training")
+text(1961.8, 720, "Future")
+#arrows(1948.7, 670, 1960.8, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+
+
+
