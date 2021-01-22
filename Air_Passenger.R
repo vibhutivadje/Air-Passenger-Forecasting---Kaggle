@@ -395,6 +395,7 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
        lwd = 1, angle = 30)
 
 # Create a data table with quadratic trend and seasonal forecast for 12 future periods,
+# AR(12) model for residuals for 12 future periods, and combined two-level forecast for
 
 
 
