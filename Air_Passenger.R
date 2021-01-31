@@ -396,6 +396,8 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 
 # Create a data table with quadratic trend and seasonal forecast for 12 future periods,
 # AR(12) model for residuals for 12 future periods, and combined two-level forecast for
+table.df <- data.frame(trend.season.pred$mean, 
+                       residual.ar12.pred$mean, trend.season.ar12.pred)
 
 
 
