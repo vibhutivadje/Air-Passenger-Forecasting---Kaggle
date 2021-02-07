@@ -420,5 +420,16 @@ legend(1950,650, legend = c("Air Passengers Series (Training Data)",
        col = c("black", "blue" , "blue"), 
        lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n")
 
+# plot on the chart vertical lines and horizontal arrows
+# describing training and future prediction intervals.
+
+lines(c(1961, 1961), c(0, 720))
+text(1955, 720, "Training")
+text(1961.8, 720, "Future")
+arrows(1948.7, 670, 1960.8, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
+       lwd = 1, angle = 30)
+
 
 
