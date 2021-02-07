@@ -401,4 +401,8 @@ table.df <- data.frame(trend.season.pred$mean,
 names(table.df) <- c("Reg.Forecast", "AR(12)Forecast","Combined.Forecast")
 table.df
 
+##12 c : HW model on entire dataset
+hw_full.ZZZ <- ets(AirPassenger.ts, model = "ZZZ")
+hw_full.ZZZ 
+
 
