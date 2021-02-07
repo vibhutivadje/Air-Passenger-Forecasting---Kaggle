@@ -405,4 +405,8 @@ table.df
 hw_full.ZZZ <- ets(AirPassenger.ts, model = "ZZZ")
 hw_full.ZZZ 
 
+hw_full.ZZZ.pred <- forecast(hw_full.ZZZ, h = 12, level = 0)
+hw_full.ZZZ.pred
+
+
 
