@@ -408,5 +408,17 @@ hw_full.ZZZ
 hw_full.ZZZ.pred <- forecast(hw_full.ZZZ, h = 12, level = 0)
 hw_full.ZZZ.pred
 
+plot(AirPassenger.ts, 
+     xlab = "Time", ylab = "Air Passengers", ylim = c(50, 720), bty = "l",
+     xaxt = "n", xlim = c(1949, 1962.25), lwd = 2,
+     main = "HW model for Entire Data Set") 
+axis(1, at = seq(1949, 1962.25, 1), labels = format(seq(1949, 1962.25, 1)))
+lines(hw_full.ZZZ.pred$fitted, col = "blue", lwd = 2)
+lines(hw_full.ZZZ.pred$mean, col = "blue", lty = 5, lwd = 2)
+legend(1950,650, legend = c("Air Passengers Series (Training Data)", 
+                            "HW model for Training Data", "HW Forecast for 12 Future Periods"), 
+       col = c("black", "blue" , "blue"), 
+       lty = c(1, 1, 5), lwd =c(2, 2, 2), bty = "n")
+
 
 
