@@ -433,5 +433,7 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 
 ## 13. MEASURE FORECAST ACCURACY FOR ENTIRE DATA SET.
 
+# Use accuracy() function to identify common accuracy measures for:
+
 
 
