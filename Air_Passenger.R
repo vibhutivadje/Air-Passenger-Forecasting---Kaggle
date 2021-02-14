@@ -437,5 +437,6 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 # (1) Two-level model (regression model with quadratic trend and seasonality + AR(12) model for residuals),
 # (2) Auto ARIMA Model
 # (3) HW model
+# (4) Seasonal naive forecast, and
 
 
