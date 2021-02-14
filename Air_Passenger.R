@@ -438,5 +438,5 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 # (2) Auto ARIMA Model
 # (3) HW model
 # (4) Seasonal naive forecast, and
-
+# (5) Naive forecast.
 
