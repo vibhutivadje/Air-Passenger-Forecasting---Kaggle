@@ -452,5 +452,8 @@ round(accuracy(hw_full.ZZZ.pred$fitted,AirPassenger.ts),3)
 # Accuracy measures for seasonal naive model
 round(accuracy((snaive(AirPassenger.ts))$fitted, AirPassenger.ts), 3)
 
+# Accuracy measures for naive model
+round(accuracy((naive(AirPassenger.ts))$fitted, AirPassenger.ts), 3)
+
 
 
