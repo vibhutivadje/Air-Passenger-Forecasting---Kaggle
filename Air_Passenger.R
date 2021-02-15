@@ -443,4 +443,7 @@ arrows(1961.1, 670, 1962.5, 670, code = 3, length = 0.1,
 # Accuracy measures for 2 level model (regression model with quadratic trend and seasonality + AR(12) for residuals)
 round(accuracy(trend.season$fitted + residual.ar12$fitted, AirPassenger.ts), 3)
 
+# Accuracy measures for Auto ARIMA model
+round(accuracy(auto.arima.pred$fitted, AirPassenger.ts), 3)
+
 
