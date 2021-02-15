@@ -449,5 +449,8 @@ round(accuracy(auto.arima.pred$fitted, AirPassenger.ts), 3)
 #Accuracy measures for HW model
 round(accuracy(hw_full.ZZZ.pred$fitted,AirPassenger.ts),3)
 
+# Accuracy measures for seasonal naive model
+round(accuracy((snaive(AirPassenger.ts))$fitted, AirPassenger.ts), 3)
+
 
 
