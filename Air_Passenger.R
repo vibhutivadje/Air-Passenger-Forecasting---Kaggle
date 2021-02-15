@@ -446,4 +446,8 @@ round(accuracy(trend.season$fitted + residual.ar12$fitted, AirPassenger.ts), 3)
 # Accuracy measures for Auto ARIMA model
 round(accuracy(auto.arima.pred$fitted, AirPassenger.ts), 3)
 
+#Accuracy measures for HW model
+round(accuracy(hw_full.ZZZ.pred$fitted,AirPassenger.ts),3)
+
+
 
